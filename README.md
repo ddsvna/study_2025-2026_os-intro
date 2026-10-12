@@ -1,5 +1,5 @@
 ## Скринкасты
-- [Rutube](https://rutube.ru/plst/114257/](https://rutube.ru/plst/1791126/)
+- [Rutube](https://rutube.ru/plst/1791126)
 - [VKvideo](https://vkvideo.ru/playlist/-241288217_1/season_undefined)
 
 1
