@@ -1,5 +1,5 @@
 ## Скринкасты
-- [Rutube]([https://rutube.ru/plst/114257/](https://rutube.ru/plst/1791126/))
+- [Rutube](https://rutube.ru/plst/114257/](https://rutube.ru/plst/1791126/)
 - [VKvideo](https://vkvideo.ru/playlist/-241288217_1/season_undefined)
 
 1
@@ -71,6 +71,10 @@
 - [Выполнение лабораторной работы](https://rutube.ru/video/5b59a36308292cc211043d52a4e14616/)
 
 - [Выполнение лабораторной работы](https://vkvideo.ru/video-241288217_456239037?pl=-241288217_1)
+
+ИП 1
+
+
 
 ## Репозиторий
 
