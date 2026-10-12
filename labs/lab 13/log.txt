@@ -1,0 +1,10 @@
+Jan 10 10:00:01 server systemd[1]: Started Session 1 of user root.
+Jan 10 10:05:23 server sshd[1234]: Accepted password for admin from 192.168.1.10 port 54321 ssh2
+Jan 10 10:10:15 server kernel: [12345.678901] EXT4-fs (sda1): mounted filesystem with ordered data mode.
+Jan 10 10:15:30 server app: INFO: Service started successfully on port 8080.
+Jan 10 10:20:45 server app: warning: Low disk space on /dev/sda1. Only 5% left.
+Jan 10 10:25:00 server app: ERROR: Database connection failed. Timeout.
+Jan 10 10:25:01 server app: Error: Failed to parse user configuration file.
+Jan 10 10:30:12 server app: DEBUG: User ID 42 requested resource /api/data.
+Jan 10 10:35:55 server sshd[1235]: Failed password for invalid user guest from 192.168.1.20 port 33333 ssh2
+Jan 10 10:40:00 server CRON[2000]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
