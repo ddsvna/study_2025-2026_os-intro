@@ -1,473 +1,79 @@
-# Шаблон каталога курса для студентов
+## Скринкасты
+- [Rutube]([https://rutube.ru/plst/114257/](https://rutube.ru/plst/1791126/))
+- [VKvideo](https://vkvideo.ru/playlist/-241288217_1/season_undefined)
 
-## Скачать репозиторий
+1
+- [Выполнение лабораторной работы](https://rutube.ru/video/3bf61307164a735503ea325e9dcc110a/?playlist=1791126)
 
-git clone --recursive https://github.com/yamadharma/course-directory-student-template.git
+- [Выполнение лабораторной работы](https://vkvideo.ru/video-241288217_456239023?pl=-241288217_1)
 
-# Основные идеи
+2
+- [Выполнение лабораторной работы](https://rutube.ru/video/d5c8a2faac594df39998cf89407088c4/?playlist=1791126)
 
-- Стандартные соглашения об именах
-- Стандартное соглашение для путей к файлам
-- Стандартная настройка курса внутри шаблона курса
+- [Выполнение лабораторной работы](https://vkvideo.ru/video-241288217_456239024?pl=-241288217_1)
 
-# Используемые стандарты и программные продукты
+3
+- - [Выполнение лабораторной работы](https://rutube.ru/video/29c4ff3abbbfabafc57b677fbcab1614/?playlist=1791126)
 
-- Стандарт Git Flow.
-- Стандарт Семантическое версионирование.
-- Стандарт Общепринятые коммиты.
+- [Выполнение лабораторной работы](https://vkvideo.ru/video-241288217_456239028?pl=-241288217_1)
 
-# Дополнительное программное обеспечение
+4
+- - [Выполнение лабораторной работы](https://rutube.ru/video/aabe91beb10f2dece761a385c42d2415/?playlist=1791126)
 
-## Средства разработки
+- [Выполнение лабораторной работы](https://vkvideo.ru/video-241288217_456239029?pl=-241288217_1)
 
-### Fedora
+5
+- - [Выполнение лабораторной работы](https://rutube.ru/video/d4862de20ad6f5190d29351583ee3b23/?playlist=1791126)
 
-- Установите средства разработки:
+- [Выполнение лабораторной работы](https://vkvideo.ru/video-241288217_456239030?pl=-241288217_1)
 
-  ``` shell
-  sudo dnf -y group install development-tools
-  ```
+6
+- - [Выполнение лабораторной работы](https://rutube.ru/video/3f431905482e00c84cf0bac544631095/?playlist=1791126)
 
-## Quarto
+- [Выполнение лабораторной работы](https://vkvideo.ru/video-241288217_456239031?pl=-241288217_1)
 
-### Установка
+7
+- - [Выполнение лабораторной работы](https://rutube.ru/video/e7b02fcfef73d905a2494bf7ca41ba01/?playlist=1791126)
 
-1.  Windows
+- [Выполнение лабораторной работы](https://vkvideo.ru/video-241288217_456239032?pl=-241288217_1)
 
-    - Chocolatey (см. [Пакетный менеджер для Windows.
-      Chocolatey](id:78f49355-a60d-4cb0-9f35-e7abd8b180df)):
+8
+- - [Выполнение лабораторной работы](https://rutube.ru/video/e6915ac37512accafb68a50f1b9ae837/?playlist=1791126)
 
-      ``` shell
-      choco install quarto
-      ```
+- [Выполнение лабораторной работы](https://vkvideo.ru/video-241288217_456239033?pl=-241288217_1)
 
-2.  Linux
+9
+- [Выполнение лабораторной работы](https://rutube.ru/video/8c86ee159e4e273d65d8da5ed343014a/?playlist=1791126)
 
-    1.  Linux в общем
+- [Выполнение лабораторной работы](https://vkvideo.ru/video-241288217_456239034?pl=-241288217_1)
 
-        - Установка с помощью скрипта:
+10
+- [Выполнение лабораторной работы](https://rutube.ru/video/0d0cb3c76d3b0e5d651053f548aa85c5/?playlist=1791126)
 
-          ``` shell
-          #!/bin/bash
+- [Выполнение лабораторной работы](https://vkvideo.ru/video-241288217_456239035?pl=-241288217_1)
 
-          ## Система
-          TARGET=/opt
-          TARGET_BIN=/usr/local/bin
-          ## Домашний каталог
-          # TARGET=~/opt
-          # TARGET_BIN=~/.local/bin
+11
+- [Выполнение лабораторной работы](https://rutube.ru/video/76941e6e119772e02541389852ec945f/?playlist=1791126)
 
+- [Выполнение лабораторной работы](https://vkvideo.ru/video-241288217_456239041?pl=-241288217_1)
 
-          ## Получить тег
-          TAG=`basename $(curl -sL -o /dev/null -w %{url_effective} https://github.com/quarto-dev/quarto-cli/releases/latest)`
-          TAG=${TAG/v/}
+12
+- [Выполнение лабораторной работы](https://rutube.ru/video/6c8837f7af166123c90367c4e2dc0e60/?playlist=1791126)
 
-          ## Скачать
-          cd /tmp
-          wget https://github.com/quarto-dev/quarto-cli/releases/download/v${TAG}/quarto-${TAG}-linux-amd64.tar.gz
+- [Выполнение лабораторной работы](https://vkvideo.ru/video-241288217_456239036?pl=-241288217_1)
 
-          ## Распаковать
-          mkdir -p ${TARGET}
-          tar -C ${TARGET} -xvzf /tmp/quarto-${TAG}-linux-amd64.tar.gz
-          mv ${TARGET}/quarto-${TAG} ${TARGET}/quarto
+13
+- [Выполнение лабораторной работы](https://rutube.ru/video/5b59a36308292cc211043d52a4e14616/)
 
-          ## Симлинк на исполняемый файл
-          mkdir -p ${TARGET_BIN}
-          ln -s ${TARGET}/quarto/bin/quarto ${TARGET_BIN}/quarto
-          ```
+- [Выполнение лабораторной работы](https://vkvideo.ru/video-241288217_456239044?pl=-241288217_1)
 
-    2.  Gentoo
+14
+- [Выполнение лабораторной работы](https://rutube.ru/video/5b59a36308292cc211043d52a4e14616/)
 
-        - Gentoo, репозиторий karma:
+- [Выполнение лабораторной работы](https://vkvideo.ru/video-241288217_456239037?pl=-241288217_1)
 
-          ``` shell
-          emerge quarto
-          ```
+## Репозиторий
 
-    3.  Arch
-
-        - Arch linux:
-
-          ``` shell
-          pacman -S quarto-cli-bin
-          ```
-
-        - Manjaro linux:
-
-          ``` shell
-          pamac install quarto-cli-bin
-          ```
-
-    4.  Fedora
-
-        - Установка из CORP:
-
-          ``` shell
-          sudo dnf -y copr enable iucar/rstudio
-          sudo dnf -y install quarto
-          sudo dnf -y install libxcrypt-compat
-          ```
-
-## Общепринятые коммиты
-
-### Установка Node.js
-
-- На Node.js базируется программное обеспечение для семантического
-  версионирования и общепринятых коммитов.
-
-- Для управления пакетами лучше использовать `pnpm`, но можно и `yarn`.
-
-- Gentoo
-
-  - Node.js:
-
-    ``` shell
-    emerge nodejs
-    emerge yarn
-    ```
-
-  - pnpm ставим из оверлея `guru`:
-
-    ``` shell
-    eselect repository enable guru
-    emerge --sync guru
-    emerge pnpm-bin
-    ```
-
-- Ubuntu
-
-  ``` shell
-  apt-get install nodejs
-  apt-get install yarn
-  ```
-
-- Fedora
-
-  ``` shell
-  sudo dnf -y install nodejs
-  sudo dnf -y install yarn pnpm
-  ```
-
-- Windows
-
-  - Chocolatey:
-
-    ``` shell
-    choco install nodejs
-    choco install yarn
-    choco install pnpm
-    ```
-
-- MacOS
-
-  ``` shell
-  brew install node
-  ```
-
-### Настройка Node.js
-
-Для работы с Node.js добавим каталог с исполняемыми файлами,
-устанавливаемыми пакетным менеджером, в переменную `PATH`.
-
-- Linux
-  - `pnpm`
-    - Запустите:
-
-      ``` shell
-      pnpm setup
-      ```
-
-    - Перелогиньтесь, или выполните:
-
-      ``` shell
-      source ~/.bashrc
-      ```
-  - `yarn`
-    - В файле `~/.bashrc` добавьте к переменной `PATH`:
-
-      ``` conf-unix
-      PATH=~/.yarn/bin:$PATH
-      ```
-
-### Установка git-flow
-
-- Linux
-
-  - Gentoo
-
-    ``` shell
-    emerge dev-vcs/git-flow
-    ```
-
-  - Ubuntu
-
-    ``` shell
-    apt-get install git-flow
-    ```
-
-  - Fedora
-
-    - Устанавливается из COPR:
-
-      ``` shell
-      sudo dnf -y copr enable elegos/gitflow
-      sudo dnf install gitflow
-      ```
-
-- Windows Git-flow входит в состав пакета git.
-
-  ``` shell
-  choco install git
-  ```
-
-- MacOS
-
-  ``` shell
-  brew install git-flow
-  ```
-
-### Общепринятые коммиты
-
-1.  commitizen
-
-    - Данная программа используется для помощи в форматировании
-      коммитов.
-      - pnpm:
-
-        ``` shell
-        pnpm add -g commitizen
-        ```
-
-      - yarn:
-
-        ``` shell
-        yarn global add commitizen
-        ```
-    - При этом устанавливается скрипт `git-cz`, который мы и будем
-      использовать для коммитов.
-
-2.  standard-version
-
-    - Данная программа автоматизирует изменение номера версии.
-      - pnpm:
-
-        ``` shell
-        pnpm add -g standard-version
-        ```
-
-      - yarn:
-
-        ``` shell
-        yarn global add standard-version
-        ```
-
-# Общие правила
-
-- Для именования каталогов и файлов будем использовать соглашение Denote.
-
-- Рабочее пространство по предмету располагается в следующей иерархии:
-
-  ``` bash
-  ~/work/study/
-  └── <учебный год>/
-      └── <учебный год>==<код предмета>/
-  ```
-
-- Например, для 2025-2026 учебного года (второй семестр) и предмета
-  «Операционные системы» (код предмета `os-intro`) структура каталогов
-  примет следующий вид:
-
-  ``` bash
-  ~/work/study/
-  └── 2026-1/
-      └── 2026-1==os-intro/
-  ```
-
-- Название проекта на хостинге git имеет вид:
-
-  ``` example
-  <учебный год>--study--<код предмета>
-  ```
-
-- Например, для 2025-2026 учебного года и предмета «Операционные
-  системы» (код предмета `os-intro`) название проекта примет следующий
-  вид:
-
-  ``` example
-  2026-1--study--os-intro
-  ```
-
-- Каталог для лабораторных работ имеет вид `labs`.
-
-- Каталоги для лабораторных работ имеют вид `lab<номер>`, например:
-  `lab01`, `lab02` и т.д.
-
-- Каталог для групповых проектов имеет вид `group-project`.
-
-- Каталог для персональных проектов имеет вид `personal-project`.
-
-- Каталог для внешнего курса имеет вид `external-course`.
-
-- Если проектов несколько, то они нумеруются подобно лабораторным
-  работам.
-
-- Этапы проекта обозначаются как `stage<номер>`.
-
-# Шаблон для рабочего пространства
-
-- Репозиторий:
-  <https://github.com/yamadharma/course-directory-student-template>.
-
-## Сознание репозитория курса на основе шаблона
-
-- Репозиторий на основе шаблона можно создать либо вручную, через
-  web-интерфейс, либо с помощью утилит `gh`.
-
-### Создание с помощью утилит
-
-- Создание выглядит следующим образом:
-
-  ``` shell
-  gh repo create <new-repo-name> --template="<owner/template-repo>"
-  ```
-
-- Например, для 2024-2025 учебного года и предмета «Операционные
-  системы» (аббревиатура предмета — `os-intro`) создание репозитория
-  примет следующий вид:
-
-  ``` shell
-  mkdir -p ~/work/study/2026-1/2026-1==study--os-intro
-  cd ~/work/study/2026-1/2026-1==study--os-intro
-  gh repo create 2026-1--study--os-intro --template=yamadharma/course-directory-student-template --public
-  git clone --recursive git@github.com:<owner>/2026-1--study--os-intro.git
-  ```
-
-### Создание вручную
-
-- Сделать свой репозиторий на основе шаблона можно и вручную:
-  <https://docs.github.com/ru/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template>.
-
-## Структура шаблона
-
-- Посмотреть доступные цели `make`:
-
-  ``` shell
-  make help
-  ```
-
-- Посмотреть список доступных курсов:
-
-  ``` shell
-  make list
-  ```
-
-- При создании структуры название курса берётся из следующих мест:
-
-  - название курса находится в файле `COURSE`;
-  - каталог курса называется как аббревиатура курса.
-
-## Настройка каталога курса
-
-- Перейдите в каталог курса:
-
-  ``` shell
-  cd ~/work/study/2026-1/2026-1==study--os-intro/2026-1--study--os-intro
-  ```
-
-- Создайте необходимые каталоги:
-
-  ``` shell
-  echo os-intro > COURSE
-  make prepare
-  ```
-
-- Отправьте файлы на сервер:
-
-  ``` shell
-  git add .
-  git commit -am 'feat(main): make course structure'
-  git push
-  ```
-
-## Использование git flow
-
-- Будем использовать для работы git flow.
-
-### Конфигурация git-flow
-
-- Инициализируем git-flow
-
-  ``` shell
-  git flow init
-  ```
-
-  Префикс для ярлыков установим в `v`.
-
-- Проверьте, что Вы на ветке `develop`:
-
-  ``` shell
-  git branch
-  ```
-
-- Загрузите весь репозиторий в хранилище:
-
-  ``` shell
-  git push -u --all
-  ```
-
-- Создадим релиз с версией 1.0.0
-
-  ``` shell
-  git flow release start 1.0.0
-  ```
-
-- Создадим журнал изменений
-
-  ``` shell
-  standard-changelog --first-release
-  ```
-
-- Добавим журнал изменений в индекс
-
-  ``` shell
-  git add CHANGELOG.md
-  git commit -am 'chore(site): add changelog'
-  ```
-
-- Зальём релизную ветку в основную ветку
-
-  ``` shell
-  git flow release finish 1.0.0
-  ```
-
-- Отправим данные на github
-
-  ``` shell
-  git push --all
-  git push --tags
-  ```
-
-- Скопируем CHANGELOG.md в каталог `release`:
-
-  ``` shell
-  mkdir -p ../release
-  cp CHANGELOG.md ../release
-  ```
-
-- Создадим релиз на github. Для этого будем использовать утилиты работы
-  с github (см. [github: утилиты командной
-  строки](id:d1925a41-6b4c-4a3a-b102-6337891b8841)):
-
-  ``` shell
-  gh release create v1.0.0 -F ../release/CHANGELOG.md
-  ```
-
-# Видео
-
-[![RuTube](https://pic.rutubelist.ru/video/2025-09-03/f3/71/f371923b6802db01d0bc4735586e7b95.jpg)](https://rutube.ru/video/90a6233297bc6de30acb3af992eaedc8/)
-
-[![Платформа](https://s-dt-rt1.cloud.edgecore.ru/fp-2025-09-cover/Jjf4mXm-h65_/607985b3-64d7-416f-b338-7e15cdcf5c3f.jpg)](https://plvideo.ru/watch?v=Jjf4mXm-h65_)
-
-[![VKvideo](https://sun1-86.userapi.com/X4ozpnObDzOszkmLpm2NpauUx075QbpjA6fVGg/pOVZsIv3Ees.jpg)](https://vkvideo.ru/video-230024722_456239047)
-
-[![Youtube](http://img.youtube.com/vi/39bu5avPoDU/0.jpg)](http://www.youtube.com/watch?v=39bu5avPoDU)
+- [Рабочий репозиторий](https://github.com/ddsvna/study_2025-2026_os-intro)
+- [Релиз v2.0.2](https://github.com/yamadharma/academic-laboratory-report-template/releases/tag/v2.0.2)
+- [Релиз v2.0.2](https://gitverse.ru/dharma/academic-laboratory-report-template/releases/tag/v2.0.2)
