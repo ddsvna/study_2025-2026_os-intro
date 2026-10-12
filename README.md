@@ -79,5 +79,5 @@
 ## Репозиторий
 
 - [Рабочий репозиторий](https://github.com/ddsvna/study_2025-2026_os-intro)
-- [Релиз v2.0.2](https://github.com/yamadharma/academic-laboratory-report-template/releases/tag/v2.0.2)
-- [Релиз v2.0.2](https://gitverse.ru/dharma/academic-laboratory-report-template/releases/tag/v2.0.2)
+- [Релиз v1.0.1](https://github.com/ddsvna/study_2025-2026_os-intro/releases/tag/v1.0.1)
+- [Релиз v1.0.0](https://github.com/ddsvna/study_2025-2026_os-intro/releases/tag/v1.0.0)
